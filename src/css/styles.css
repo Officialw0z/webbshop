@@ -1,0 +1,120 @@
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navbar__logo {
+    width: 170px;
+    height: 58px;
+}
+
+
+.navbar__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar__products {
+    margin-right: 80%;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+}
+
+.navbar__account {
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 20%;
+    margin-left: -70%;
+    font-weight: 400;
+}
+
+.navbar__cart {
+    width: 30%;
+    height: 30%;
+    margin-right: 60%;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    margin-top: 2%;
+    justify-self: center;
+    width: 45%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: 50%;
+    background-color: #EEEEEE;
+    gap: 2%;
+}
+
+.main__box1 {
+    display: grid;
+    grid-area: 1/1/2/2;
+    background-color: whitesmoke;
+    height: auto;
+    width: auto;
+}
+
+.main__box1--header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.main__box1--sex {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 30%;
+    color: rgba(0, 0, 0, 0.603);
+    margin-left: 10%;
+}
+
+.main__box1--cart {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.main__box1--product {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.main__box1--prize {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 30%;
+    height: 10%;
+    border-radius: 999rem;
+    color: white;
+    background-color: black;
+    justify-self: center;
+}
+
+
+.main__box2 {
+    display: grid;
+    grid-area: 1/2/2/2;
+    background-color: whitesmoke;
+}
+
+.main__box3 {
+    display: grid;
+    grid-area: 1/3/2/3;
+    background-color: whitesmoke;
+}
