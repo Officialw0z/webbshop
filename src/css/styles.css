@@ -59,7 +59,7 @@
     gap: 2%;
 }
 
-.main__box1 {
+.main__box {
     display: grid;
     grid-area: 1/1/2/2;
     background-color: whitesmoke;
@@ -67,14 +67,14 @@
     width: auto;
 }
 
-.main__box1--header {
+.main__box--header {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 10%;
     margin-left: 10%;
 }
 
-.main__box1--sex {
+.main__box--sex {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 30%;
@@ -82,7 +82,7 @@
     margin-left: 10%;
 }
 
-.main__box1--cart {
+.main__box--cart {
     grid-row: 1/2;
     grid-column: 2/3;
     justify-self: center;
@@ -90,31 +90,27 @@
     margin-left: 30%;
 }
 
-.main__box1--product {
+.main__box--product {
     grid-row: 2/3;
-    grid-column: 1/2;
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: flex-end;
 }
 
-.main__box1--prize {
+.main__box--prize {
     grid-row: 2/3;
-    grid-column: 1/2;
+    grid-column: 1/3;
     width: 30%;
     height: 10%;
-    border-radius: 999rem;
+    border-radius: 99rem;
     color: white;
     background-color: black;
-    justify-self: center;
-}
-
-
-.main__box2 {
-    display: grid;
-    grid-area: 1/2/2/2;
-    background-color: whitesmoke;
-}
-
-.main__box3 {
-    display: grid;
-    grid-area: 1/3/2/3;
-    background-color: whitesmoke;
+    margin-left: 8%;
+    align-self: flex-end;
+    margin-bottom: 8%;
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
