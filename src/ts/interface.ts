@@ -8,3 +8,7 @@ export interface Product {
     price: number,
     image?: string
 }
+
+export interface CartItem {
+    name: string
+}
