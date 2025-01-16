@@ -1,11 +1,11 @@
-const products = [
+export const products = [
     { title: 'Greta Fury',
         category: 'Skateboard',
         sex: 'Unisex',
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 999,
-        image: './img/greta-tip1.png'
+        image: '/img/greta-small.png'
     },
     { title: 'Tricky',
         category: 'Skateboard',
@@ -13,7 +13,7 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 799,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/skateboard-tip 1.png'
     },
     { title: 'Flipper',
         category: 'Skateboard',
@@ -21,7 +21,7 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 599,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/skateboard-tip 1.png'
     },
     { title: 'Hiphop',
         category: 'Skateboard',
@@ -29,7 +29,7 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 799,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/skateboard-tip 1.png'
     },
     { title: 'Awesome',
         category: 'Skateboard',
@@ -37,7 +37,7 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 799,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/skateboard-tip 1.png'
     },
     { title: 'Swag',
         category: 'Skateboard',
@@ -45,7 +45,7 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 599,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/skateboard-tip 1.png'
     },
     { title: 'Ash Hoodie',
         category: 'Hoodie',
@@ -54,7 +54,6 @@ const products = [
         size: ['S', 'M', 'L'],
         description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
         price: 599,
-        image: './img/skateboard-tip 1.png'
+        image: '/img/hoodie-ash.png'
     },
 ];
-export {};

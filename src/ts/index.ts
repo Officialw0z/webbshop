@@ -1,10 +1,16 @@
 import { CartItem } from "./interface.js"; 
 
+import { products } from "./elements.js";
+
 const cartIcon = document.getElementById("cart__icon") as HTMLElement
 const cartDropdown = document.getElementById("cart__dropdown") as HTMLElement
 const cartItems = document.getElementById("cart__items") as HTMLElement
+const mainContainer = document.querySelector('.main') as HTMLElement
+
 
 const cart: CartItem[] = []
+
+
 
 function updateCart(): void {
     cartItems.innerText = ""
@@ -56,4 +62,17 @@ document.addEventListener('click', (event)=> {
         cartDropdown.classList.remove('show')
 })
 
-addToCart('Produkt 1')
+addToCart('Produkt 1');
+
+(function getProducts() {
+    products.forEach(product => {
+        mainContainer.innerHTML += 
+        `<section class="main__box">
+        <h2 class="main__box--header">${product.title}</h2>
+        <h4 class="main__box--sex">${product.sex}</h4>
+        <img src="/img/cart (1).png" alt="add to cart" class="main__box--cart">
+        <img src="${product.image}" alt="product" class="main__box--product">
+        <span class="main__box--prize">${product.price}</span>
+        </section>`
+    });
+})()

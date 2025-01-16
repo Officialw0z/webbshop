@@ -7,7 +7,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 999,
-    image: './img/greta-tip1.png'
+    image: '/img/greta-small.png'
 },
 
    { title: 'Tricky', 
@@ -16,7 +16,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 799,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/skateboard-tip 1.png'
 },
    { title: 'Flipper', 
     category: 'Skateboard', 
@@ -24,7 +24,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 599,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/skateboard-tip 1.png'
 },
    { title: 'Hiphop', 
     category: 'Skateboard', 
@@ -32,7 +32,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 799,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/skateboard-tip 1.png'
 },
    { title: 'Awesome', 
     category: 'Skateboard', 
@@ -40,7 +40,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 799,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/skateboard-tip 1.png'
 },
    { title: 'Swag', 
     category: 'Skateboard', 
@@ -48,7 +48,7 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 599,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/skateboard-tip 1.png'
 },
    { title: 'Ash Hoodie', 
     category: 'Hoodie', 
@@ -57,6 +57,6 @@ export const products: Product[] = [
     size: ['S', 'M', 'L'], 
     description: 'lorem ipsumn lkada ölaksdölaks ölajkdsöla akjsdfdhaa',
     price: 599,
-    image: './img/skateboard-tip 1.png'
+    image: '/img/hoodie-ash.png'
 },
 ]

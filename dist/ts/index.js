@@ -1,6 +1,8 @@
+import { products } from "./elements.js";
 const cartIcon = document.getElementById("cart__icon");
 const cartDropdown = document.getElementById("cart__dropdown");
 const cartItems = document.getElementById("cart__items");
+const mainContainer = document.querySelector('.main');
 const cart = [];
 function updateCart() {
     cartItems.innerText = "";
@@ -44,5 +46,15 @@ document.addEventListener('click', (event) => {
     cartDropdown.classList.remove('show');
 });
 addToCart('Produkt 1');
-addToCart('Produkt 1');addToCart('Produkt 1');addToCart('Produkt 1');
-
+(function getProducts() {
+    products.forEach(product => {
+        mainContainer.innerHTML +=
+            `<section class="main__box">
+        <h2 class="main__box--header">${product.title}</h2>
+        <h4 class="main__box--sex">${product.sex}</h4>
+        <img src="/img/cart (1).png" alt="add to cart" class="main__box--cart">
+        <img src="${product.image}" alt="product" class="main__box--product">
+        <span class="main__box--prize">${product.price}</span>
+        </section>`;
+    });
+})();
