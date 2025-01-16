@@ -1,6 +1,6 @@
 import { Product } from "./interface.js";
 
-const products: Product[] = [
+export const products: Product[] = [
    { title: 'Greta Fury', 
     category: 'Skateboard', 
     sex: 'Unisex', 
