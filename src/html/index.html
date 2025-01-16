@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/global.css">
     <link rel="stylesheet" href="/src/css/styles.css">
-    <title>Document</title>
+    <script src="/dist/ts/index.js" defer></script>
+    <title>Sinus Webshop</title>
+    <link rel="shortcut icon" href="/img/Vector.png" type="image/x-icon">
 </head>
 <body>
         <nav class="navbar">
@@ -13,8 +15,11 @@
             <div class="navbar__divider">
                 <a href="index.html" class="navbar__products">Products</a>
                 <a href="account.html" class="navbar__account">My Account</a>
-                <img src="/img/cart.png" alt="Cart logo" class="navbar__cart">
+                <img src="/img/cart.png" alt="Cart logo" class="navbar__cart" id="cart__icon">
+                <div class="cart__dropdown" id="cart__dropdown">
+                <ul class="cart__items" id="cart__items"></ul>
         </div>
+    </div>
     </nav>
 
     <main class="main">
