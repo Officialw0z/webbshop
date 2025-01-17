@@ -45,16 +45,25 @@ document.addEventListener('click', (event) => {
     }
     cartDropdown.classList.remove('show');
 });
-addToCart('Produkt 1');
 (function getProducts() {
-    products.forEach(product => {
+    products.forEach((product, index) => {
         mainContainer.innerHTML +=
             `<section class="main__box">
         <h2 class="main__box--header">${product.title}</h2>
         <h4 class="main__box--sex">${product.sex}</h4>
-        <img src="/img/cart (1).png" alt="add to cart" class="main__box--cart">
+        <img src="/img/cart (1).png" alt="add to cart" class="main__box--cart" data-id="${index}">
         <img src="${product.image}" alt="product" class="main__box--product">
-        <span class="main__box--prize">${product.price}</span>
+        <span class="main__box--prize">${product.price + " SEK"} </span>
         </section>`;
     });
 })();
+document.querySelectorAll('.main__box--cart').forEach(cartIcon => {
+    cartIcon.addEventListener('click', (event) => {
+        const target = event.target;
+        const productId = target.getAttribute('data-id');
+        if (productId !== null) {
+            const product = products[parseInt(productId)];
+            addToCart(product.title);
+        }
+    });
+});
